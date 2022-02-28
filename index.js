@@ -1,9 +1,7 @@
 import fetch from "node-fetch";
 import fs from "fs";
-const { exec, execFile } = require('child_process');
 const core = require('@actions/core');
 const github = require('@actions/github');
-var child_process = require('child_process');
 
 try {
 
