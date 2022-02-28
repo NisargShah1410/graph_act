@@ -1,0 +1,6 @@
+name: 'GraphQL action'
+description: 'Graphql custom action for last 100 pull request'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
