@@ -1,9 +1,10 @@
 import fetch from "node-fetch";
-import fs from "fs";
-import core from "actions";
-import github from "actions";
-//const core = require('@actions/core');
-////const github = require('@actions/github');
+//import fs from "fs";
+//import {core,github} from "actions";
+const core = require('@actions/core');
+const github = require('@actions/github');
+const fetch = require("node-fetch");
+var fs = require("fs");
 
 try {
 
