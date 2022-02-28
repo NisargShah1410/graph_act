@@ -3,7 +3,7 @@ import fs from "fs";
 import core from "actions";
 import github from "actions";
 //const core = require('@actions/core');
-//const github = require('@actions/github');
+////const github = require('@actions/github');
 
 try {
 
