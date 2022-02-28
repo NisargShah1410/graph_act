@@ -5,13 +5,17 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  commit_history:
+  build:
     runs-on: ubuntu-latest
     steps:
       # Checkout the branch
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: get pull request history
-        uses: nisargshah1410/graph_act@v1.7
+      - name: GraphQL combined action
+        uses: demotcsorg/gh_graphql_action@v1.8
+        with:
+          GITHUB_TOKEN: ${{ secrets.graphQLtoken }}
+          USERNAME: NisargShah1410
+          OPERATION: query_pr
           
