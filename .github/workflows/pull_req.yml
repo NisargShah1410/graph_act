@@ -15,7 +15,7 @@ jobs:
       - name: GraphQL combined action
         uses: demotcsorg/gh_graphql_action@v1.8
         with:
-          GITHUB_TOKEN: ${{ secrets.graphQLtoken }}
+          GITHUB_TOKEN: ${{ secrets.GRAPHQLTOKEN }}RAP
           USERNAME: NisargShah1410
           OPERATION: query_pr
           
