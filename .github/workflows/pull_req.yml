@@ -1,0 +1,17 @@
+name: GraphQL
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  commit_history:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: get pull request history
+        uses: nisargshah1410/graph_act@v1.1
+          
