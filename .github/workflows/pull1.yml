@@ -1,4 +1,4 @@
-name: GraphQL
+name: GraphQL for trigger
 on:
   workflow_dispatch
 jobs:
