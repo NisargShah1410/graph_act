@@ -1,0 +1,18 @@
+name: GraphQL
+on:
+  workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: GraphQL combined action
+        uses: demotcsorg/gh_graphql_action@v1.8
+        with:
+          GITHUB_TOKEN: ${{ secrets.GRAPHQLTOKEN }}
+          USERNAME: NisargShah1410
+          OPERATION: query_pr
+          
