@@ -1,0 +1,21 @@
+name: GraphQL
+on:
+  push:
+    branches: [ main1 ]
+  pull_request:
+    branches: [ main1 ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: GraphQL combined action
+        uses: NisargShah1410/graphql_action@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GRAPHQLTOKEN }}
+          USERNAME: NisargShah1410
+          OPERATION: query_pr
+          
