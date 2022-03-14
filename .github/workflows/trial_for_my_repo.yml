@@ -17,5 +17,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GRAPHQLTOKEN }}
           USERNAME: NisargShah1410
-          OPERATION: query_commit
+          OPERATION: query_org
           
