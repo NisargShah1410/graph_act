@@ -13,9 +13,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: GraphQL combined action
-        uses: NisargShah1410/graphql_action@v1.20
+        uses: NisargShah1410/graphql_action@v1.22
         with:
           GITHUB_TOKEN: ${{ secrets.GRAPHQLTOKEN }}
           USERNAME: NisargShah1410
-          OPERATION: query_pinned_projects
+          OPERATION: query_email
           
