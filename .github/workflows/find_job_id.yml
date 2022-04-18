@@ -1,0 +1,14 @@
+#
+name: GraphQL
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find job id 
+        run: echo ${{ github.job }}
+ 
