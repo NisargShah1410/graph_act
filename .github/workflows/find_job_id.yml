@@ -9,6 +9,8 @@ jobs:
   find:
     runs-on: ubuntu-latest
     steps:
-      - name: Find job id 
-        run: echo ${{ github.run_id }}
+      - name: Find
+        run: |
+          echo ${{ github.run_id }}
+          echo ${{github.job }}
  
