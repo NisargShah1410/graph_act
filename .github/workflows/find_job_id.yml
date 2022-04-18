@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Find job id 
-        run: echo ${{ github.job }}
+        run: echo ${{ github.run_id }}
  
